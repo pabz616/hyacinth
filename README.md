@@ -2,14 +2,36 @@
 
 Appium w. Python
 
-# Setup
+## Setup
 
-Documentation
+### Documentation
+
 * `https://appium.github.io/python-client-sphinx/`
 * `https://appium.io/docs/en/2.5/quickstart/`
 * `https://www.lambdatest.com/support/docs/appium-python-pytest/`
 
-Directions
+## Pre-flight Check
+
+* Check current version of Appium - `appium -v` .. reconcile with release notes - `https://www.npmjs.com/package/appium?activeTab=versions` .. update accordingly if behind.
+* Launch appium inspector and verify you can access the app via the inspector.
+* Run appium-doctor and confirm setup. `appium-doctor --ios` or `appium-doctor --android`
+* Install appium driver for android - `appium driver install uiautomator2`
+* Verify your system is updated by reconciling the out from the list with current version - `appium driver list`
+  * To update a driver - `appium driver update <driver-name>` (pro tip! grab some coffee .. this will be tedious!)
+
+| Driver List |
+| :------------ |
+| xcuitest |
+| espresso |
+| gecko |
+| safari |
+| uiautomator2 |
+| flutter |
+| mac2 |
+| chromium |
+
+### Directions
+
 1. Following the quickstart documentation, use appium-doctor to correct any misconfiguration issues
 2. If you are using VSCode, add python and simcode extensions, otherwise you can use genymotion or real devices
 3. Install the necessary drivers for ios and android
