@@ -10,9 +10,9 @@ def test_setup_ios(request):
     test_name = request.node.name
     build = environ.get('BUILD', "Pytest iOS Sample")
     caps = {}
-    caps["deviceName"] = 'iPhone 15 Pro Max'
+    caps["deviceName"] = 'iPhone 17 Pro'
     caps["platformName"] = 'iOS'
-    caps["platformVersion"] = '17.2'
+    caps["platformVersion"] = '26.2'
     caps["app"] = f"{Project.ios_app}"
     caps["automationName"] = 'XCUITest'
     caps["isRealMobile"] = True
