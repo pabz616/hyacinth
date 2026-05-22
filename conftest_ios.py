@@ -4,6 +4,7 @@ from appium import webdriver
 from utils.data import Project
 from appium.options.ios import XCUITestOptions
 
+# iPhone 17 Pro UDID: 69AA4BED-EAB2-476B-A727-ED4661861BDD
     
 @pytest.fixture(scope='function')
 def test_setup_ios(request):
