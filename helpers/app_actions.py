@@ -1,11 +1,12 @@
 from appium.webdriver.common.appiumby import AppiumBy
+from appium.options.android import UiAutomator2Options
 import time
 
 
 class Base(object):
     def __init__(self, driver):
         self.driver = driver
-       
+
         
 class AppAction(Base):
     def click_button(self, label):
@@ -24,6 +25,10 @@ class AppAction(Base):
         
     def confirm_element_is_visible(self, element):
         el = self.driver.find_element(AppiumBy.ACCESSIBILITY_ID, f"{element}")
+        assert el.is_displayed()
+  
+    def confirm_element_by_XPATH_is_visible(self, element):
+        el = self.driver.find_element(AppiumBy.XPATH, f"{element}")
         assert el.is_displayed()
         
     def confirm_element_by_ID_is_visible(self, element_id):
@@ -59,3 +64,6 @@ class AppAction(Base):
         assert input.is_displayed()
         input.click()
         input.send_keys(text_value)
+       
+    def scroll_to_element(self, element):
+        self.driver.execute_script('mobile: scrollGesture', {'elementId': element, 'direction': 'down'})
