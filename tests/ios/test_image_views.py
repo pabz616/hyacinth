@@ -13,6 +13,6 @@ IOS APP IMAGE VIEWS TESTS
 class TestImageViews:
     """IMAGE VIEWS"""
     def test_confirm_images_on_screen(self):
-        onHomeScreen.select_option(self, 'Image View')
+        onHomeScreen.tap(self, 'Image View')
         onImageViewsScreen.confirm_screen_header(self, 'Image View', imageElement.header)
         onImageViewsScreen.confirm_images_on_screen(self, imageElement.image1)
