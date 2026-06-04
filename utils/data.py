@@ -16,10 +16,15 @@ class iOSHomeScreen:
         "Activity Indicators", "Alert Views", "Buttons", "Date Picker",
         "Image View", "Page Control", "Picker View", "Progress Views",
         "Search", "Segmented Controls", "Sliders", "Stack Views",
-        "Steppers", "Switches", "Text Fields", "Toolbars", "Web View"],
+        "Steppers", "Switches", "Text Fields", "Toolbars", "Web View"]
+
+    
+class iOSTextViewsScreen:
     defaultInput = '//XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeTextField[@value="Placeholder text"]'
     tintedInput = '//XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeTextField[@value="Placeholder text"]'
     secureInput = '//XCUIElementTypeSecureTextField[@value="Placeholder text"]'
+    specificKeyboardInput = '//XCUIElementTypeTable/XCUIElementTypeCell[4]/XCUIElementTypeTextField[@value="Placeholder text"]'
+    customInput = '//XCUIElementTypeImage[@name="text_field_background"]'
     
         
 class Accessibility:

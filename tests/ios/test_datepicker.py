@@ -1,5 +1,5 @@
 import pytest
-# from conftest_ios import test_setup_ios
+from conftest_ios import test_setup_ios
 from screens.iOS.homeScreen import HomeScreen as onHomeScreen
 from screens.iOS.datepickerViewScreen import DatePickerViewsScreen as onDatePickerViewsScreen
 
