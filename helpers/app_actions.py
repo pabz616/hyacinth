@@ -23,6 +23,10 @@ class AppAction(Base):
         nav.click()
         time.sleep(0.5)
         
+    def confirm_element_text(self, expected_text, element):
+        el = self.driver.find_element(AppiumBy.CLASS_NAME, f"{element}")
+        assert f"{expected_text}" in el.text
+        
     def confirm_element_is_visible(self, element):
         el = self.driver.find_element(AppiumBy.ACCESSIBILITY_ID, f"{element}")
         assert el.is_displayed()

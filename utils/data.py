@@ -26,6 +26,11 @@ class iOSTextViewsScreen:
     specificKeyboardInput = '//XCUIElementTypeTable/XCUIElementTypeCell[4]/XCUIElementTypeTextField[@value="Placeholder text"]'
     customInput = '//XCUIElementTypeImage[@name="text_field_background"]'
     
+    
+class iOSImageElement:
+    header = 'XCUIElementTypeStaticText'
+    image1 = 'Animated' 
+        
         
 class Accessibility:
     accessibility_node_provider_copy = "Enable TalkBack and Explore-by-touch from accessibility settings. Then touch the colored squares."
