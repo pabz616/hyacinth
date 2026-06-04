@@ -4,15 +4,16 @@ from appium import webdriver
 from utils.data import Project
 from appium.options.ios import XCUITestOptions
 
+# iPhone 17 Pro UDID: 69AA4BED-EAB2-476B-A727-ED4661861BDD
     
 @pytest.fixture(scope='function')
 def test_setup_ios(request):
     test_name = request.node.name
     build = environ.get('BUILD', "Pytest iOS Sample")
     caps = {}
-    caps["deviceName"] = 'iPhone 15 Pro Max'
+    caps["deviceName"] = 'iPhone 17 Pro Max'
     caps["platformName"] = 'iOS'
-    caps["platformVersion"] = '17.2'
+    caps["platformVersion"] = '26.2'
     caps["app"] = f"{Project.ios_app}"
     caps["automationName"] = 'XCUITest'
     caps["isRealMobile"] = True

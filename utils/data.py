@@ -17,7 +17,29 @@ class iOSHomeScreen:
         "Image View", "Page Control", "Picker View", "Progress Views",
         "Search", "Segmented Controls", "Sliders", "Stack Views",
         "Steppers", "Switches", "Text Fields", "Toolbars", "Web View"]
+
+    
+class iOSTextViewsScreen:
+    defaultInput = '//XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeTextField[@value="Placeholder text"]'
+    tintedInput = '//XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeTextField[@value="Placeholder text"]'
+    secureInput = '//XCUIElementTypeSecureTextField[@value="Placeholder text"]'
+    specificKeyboardInput = '//XCUIElementTypeTable/XCUIElementTypeCell[4]/XCUIElementTypeTextField[@value="Placeholder text"]'
+    customInput = '//XCUIElementTypeImage[@name="text_field_background"]'
     
     
+class iOSImageElement:
+    header = 'XCUIElementTypeStaticText'
+    image1 = 'Animated'     
+    
+    
+class iOSSearchViewScreen:
+    search_header = 'XCUIElementTypeStaticText'
+    searchInput = '//XCUIElementTypeSearchField'
+    submitButton = 'Search'
+    cancelButton = 'Cancel'
+    scope1 = 'Scope One'
+    scope2 = 'Scope Two'
+
+        
 class Accessibility:
     accessibility_node_provider_copy = "Enable TalkBack and Explore-by-touch from accessibility settings. Then touch the colored squares."

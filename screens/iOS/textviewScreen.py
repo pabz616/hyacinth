@@ -6,7 +6,9 @@ class Base(object):
         self.driver = driver
         
         
-class HomeScreen(Base):
+class TextViewsScreen(Base):
     def tap(self, label):
         AppAction.click_button(self, label)
         
+    def enter_text_in_field(self, field, text):
+        AppAction.enter_text(self, field, text)
