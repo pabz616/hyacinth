@@ -1,5 +1,4 @@
 from appium.webdriver.common.appiumby import AppiumBy
-from appium.options.android import UiAutomator2Options
 import time
 
 

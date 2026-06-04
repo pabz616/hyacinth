@@ -7,7 +7,7 @@ class Base(object):
         
         
 class TextViewsScreen(Base):
-    def select_option(self, label):
+    def tap(self, label):
         AppAction.click_button(self, label)
         
     def enter_text_in_field(self, field, text):

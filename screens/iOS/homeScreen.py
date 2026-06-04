@@ -7,6 +7,6 @@ class Base(object):
         
         
 class HomeScreen(Base):
-    def select_option(self, label):
+    def tap(self, label):
         AppAction.click_button(self, label)
         

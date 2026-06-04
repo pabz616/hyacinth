@@ -29,8 +29,17 @@ class iOSTextViewsScreen:
     
 class iOSImageElement:
     header = 'XCUIElementTypeStaticText'
-    image1 = 'Animated' 
-        
+    image1 = 'Animated'     
+    
+    
+class iOSSearchViewScreen:
+    search_header = 'XCUIElementTypeStaticText'
+    searchInput = '//XCUIElementTypeSearchField'
+    submitButton = 'Search'
+    cancelButton = 'Cancel'
+    scope1 = 'Scope One'
+    scope2 = 'Scope Two'
+
         
 class Accessibility:
     accessibility_node_provider_copy = "Enable TalkBack and Explore-by-touch from accessibility settings. Then touch the colored squares."
