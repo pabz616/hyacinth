@@ -16,8 +16,11 @@ class iOSHomeScreen:
         "Activity Indicators", "Alert Views", "Buttons", "Date Picker",
         "Image View", "Page Control", "Picker View", "Progress Views",
         "Search", "Segmented Controls", "Sliders", "Stack Views",
-        "Steppers", "Switches", "Text Fields", "Toolbars", "Web View"]
+        "Steppers", "Switches", "Text Fields", "Toolbars", "Web View"],
+    defaultInput = '//XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeTextField[@value="Placeholder text"]'
+    tintedInput = '//XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeTextField[@value="Placeholder text"]'
+    secureInput = '//XCUIElementTypeSecureTextField[@value="Placeholder text"]'
     
-    
+        
 class Accessibility:
     accessibility_node_provider_copy = "Enable TalkBack and Explore-by-touch from accessibility settings. Then touch the colored squares."
