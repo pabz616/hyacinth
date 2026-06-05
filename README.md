@@ -1,6 +1,7 @@
 # hyacinth
 
 Appium w. Python
+
 As of June 2026, version is `3.2.4`
 
 ## Setup
