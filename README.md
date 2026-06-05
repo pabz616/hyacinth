@@ -1,6 +1,7 @@
 # hyacinth
 
 Appium w. Python
+As of June 2026, version is `3.2.4`
 
 ## Setup
 
@@ -44,4 +45,4 @@ Appium w. Python
 
 Demo Apps
 1. For Android, `../apps/android/ApiDemos-debug.apk`
-2. For iOS, ``../apps/ios/UIKitCatalog-iphonesimulator.app`
+2. For iOS, `../apps/ios/UIKitCatalog-iphonesimulator.app`
